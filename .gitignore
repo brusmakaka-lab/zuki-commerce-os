@@ -29,9 +29,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.next-dev.log
+.next-dev.err.log
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +42,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Respaldo público: configuración y artefactos privados
+.env*
+!.env.example
+.neon
+.npmrc
+.vercel/
+*.log
+*.tsbuildinfo
+audits/
+.audit-shots/
+test-results/
+playwright-report/
+*.sqlite*
+*.db
